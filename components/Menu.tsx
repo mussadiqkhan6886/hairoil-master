@@ -9,9 +9,9 @@ const Menu = ({setShowMenu}: {setShowMenu: React.Dispatch<React.SetStateAction<b
         <p className='text-white absolute right-10 top-10 ' onClick={() => setShowMenu(false)}>x</p>
        <div className='flex flex-col gap-7 p-10 text-sm text-white'>
             <Link onClick={() => setShowMenu(false)} href={"/"}>HOME</Link>
-            <Link onClick={() => setShowMenu(false)} href={`/products`}>CATALOG</Link>
-            <Link onClick={() => setShowMenu(false)} href={"/contact"}>CONTACT</Link>
-            <Link onClick={() => setShowMenu(false)} href={"/contact"}>ADD REVIEW</Link>
+            <Link onClick={() => setShowMenu(false)} href={`/`}>CATALOG</Link>
+            <Link onClick={() => setShowMenu(false)} href={"/"}>CONTACT</Link>
+            <Link onClick={() => setShowMenu(false)} href={"/"}>ADD REVIEW</Link>
         </div>
     </aside>
   )
