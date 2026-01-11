@@ -1,11 +1,11 @@
-import { Lato, Style_Script, Abril_Fatface } from "next/font/google"
+import { Style_Script, Instrument_Serif, Roboto } from "next/font/google"
 
-export const lato = Lato({
+export const lato = Roboto({
      weight: ["100" , "300" , "400" , "700" , "900" ],
     style: ["normal" , "italic"],
     subsets: ["latin"]
 })
-export const instrumental = Abril_Fatface({
+export const instrumental = Instrument_Serif({
      weight: ["400"],
     subsets: ["latin"]
 })

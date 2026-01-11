@@ -35,8 +35,9 @@ const WhyUs = () => {
   ];
 
   return (
-    <section className="py-24 px-5 md:px-16 lg:px-28 text-center overflow-hidden">
-      <h2 className={`${instrumental.className} text-[40px] sm:text-5xl mb-10 text-main`}>
+    <section style={{backgroundImage: `URL(${"/leaves.jpg"})`, backgroundPosition: "center", backgroundSize: "cover"}} className="flex items-center flex-col justify-center min-h-screen px-5 md:px-16 lg:px-28 text-center overflow-hidden mt-10">
+
+      <h2 className={`${instrumental.className} text-[40px] sm:text-5xl mb-10 text-dark`}>
         Why Choose Us
       </h2>
 
@@ -44,7 +45,7 @@ const WhyUs = () => {
         {cards.map((card, i) => (
           <motion.div
             key={i}
-            className="p-6 shadow-lg rounded-2xl bg-main text-white"
+            className="p-6 bg-dark text-white"
             variants={cardVariants}
             initial="hidden"
             whileInView="visible"
@@ -52,11 +53,11 @@ const WhyUs = () => {
             custom={i}
           >
             <h3
-              className={`${instrumental.className} text-2xl mb-3`}
+              className={`${instrumental.className} text-2xl tracking-wide mb-3`}
             >
               {card.title}
             </h3>
-            <p>{card.text}</p>
+            <p className='font-light'>{card.text}</p>
           </motion.div>
         ))}
       </div>

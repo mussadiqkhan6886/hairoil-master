@@ -28,7 +28,7 @@ const Product = () => {
   return (
     <section className="py-10 lg:py-20 bg-green-50 overflow-hidden">
       <h2
-        className={`${instrumental.className} text-5xl text-center mb-10 font-main text-main`}
+        className={`${instrumental.className} text-5xl text-center mb-10 font-main text-dark`}
       >
         Our Product
       </h2>
@@ -43,11 +43,11 @@ const Product = () => {
           viewport={{ once: true, amount: 0.3 }}
         >
           <Image
-            width={150}
-            height={150}
-            src="/oil (3).jpg"
+            width={400}
+            height={400}
+            src="/oil.jpg"
             alt="Herbal Hair Oil Bottle"
-            className="w-full md:w-[80%] rounded-3xl shadow-lg"
+            className="w-full md:w-[80%] h-full"
           />
         </motion.div>
 
@@ -60,15 +60,15 @@ const Product = () => {
           viewport={{ once: true, amount: 0.3 }}
         >
           <h2
-            className={`${instrumental.className} text-[35px] sm:text-4xl text-main mb-6 leading-snug`}
+            className={`${instrumental.className} text-[35px] sm:text-4xl text-dark mb-6 leading-snug`}
           >
-            Pure Herbal Hair Oil
+            Root Weaver
           </h2>
-          <p className="text-main text-lg mb-10 leading-relaxed">
+          <p className="text-dark text-lg mb-10 leading-relaxed">
             Discover the secret to naturally radiant, healthy, and strong hair with our
-            <span className="text-main font-semibold">
+            <span className="text-dark font-semibold">
               {' '}
-              Pure Herbal Hair Oil
+              Root Weaver
             </span>
             . Made with a blend of ancient herbs and essential oils, this luxurious formula
             deeply nourishes your scalp, strengthens hair roots, and reduces breakage —
@@ -82,8 +82,8 @@ const Product = () => {
           </p>
 
           <Link
-            href="/products"
-            className="inline-block mt-8 bg-main text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-green-800 transition-colors"
+            href="/"
+            className="inline-block mt-8 bg-dark text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-green-800 transition-colors"
           >
             Shop Now
           </Link>

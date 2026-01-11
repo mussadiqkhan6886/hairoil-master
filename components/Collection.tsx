@@ -2,7 +2,7 @@ import { instrumental } from '@/fonts/font'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import { FiArrowRight } from 'react-icons/fi'
+import { FiArrowRight, FiArrowUpRight } from 'react-icons/fi'
 
 const Collection = () => {
   return (
@@ -15,26 +15,22 @@ const Collection = () => {
     <div className="flex px-5 justify-center">
 
       {/* Card 3 */}
-      <div className="bg-white h-full max-w-[400px] overflow-hidden">
+      <div className="bg-white rounded h-full max-w-[400px] overflow-hidden">
+        <div className="p-4 flex justify-between items-center text-left h-full">
+          <h3 className={`${instrumental.className} text-3xl text-center text-dark mb-3`}>Hair Oil</h3>
+          <button className='py-1.5 px-2.5 text-center rounded-full border border-dark ' > <Link href={"/"}><FiArrowUpRight className='inline-block' /></Link></button>
+        </div>
         <Image
           width={400}
-          height={400}
-          src="/oil (10).jpg"
+          height={350}
+          src="/oil.jpg"
           alt="Coconut Hair Oil"
-          className="w-full h-[65%] object-cover object-bottom hover:scale-105 transition-all duration-200"
+          className="w-full object-cover object-bottom hover:scale-105 transition-all duration-200"
         />
-        <div className="p-6 text-left h-full">
-          <h3 className={`${instrumental.className} text-3xl  text-main mb-3`}>Hair Oil</h3>
-          <p className="text-font text-sm">
-            Purely crafted from nature’s finest herbs, our oil deeply nourishes your scalp and strengthens each strand.
-            Experience softer, shinier hair with every use.
-            Bring life back to dull and damaged hair — naturally.
-          </p>
-          <button className='mt-6 py-1.5 w-full  border border-main ' > <Link href={"/collections/oil"}>Visit</Link> <FiArrowRight className='inline-block ml-1' /></button>
-        </div>
       </div>
     </div>
   </div>
+  {/* <Image src={"/leave-1.jpg"} alt='leave' width={100} height={100} /> */}
 </section>
 
   )

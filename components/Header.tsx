@@ -18,22 +18,22 @@ const Header = () => {
       {/* <div className='bg-main py-2 font-bold text-white'>
         <h2 className='text-center text-sm tracking-widest'>DELIVERY ALL OVER PAKISTAN !</h2>
       </div> */}
-      <div className='px-3 sm:px-6 md:px-16 lg:px-24 flex justify-between items-center py-4'>
+      <div className='px-3 sm:px-6 md:px-10 lg:px-20 flex justify-between items-center py-4'>
         <div className='md:flex hidden gap-10 items-center'>
           <div className='hidden md:flex gap-7 text-sm '>
             <Link href={"/"}>HOME</Link>
-            <Link href={`/products`}>CATALOG</Link>
-            <Link href={"/contact"}>CONTACT</Link>
+            <Link href={`/`}>CATALOG</Link>
+            <Link href={"/"}>CONTACT</Link>
           </div>
         </div>
         <div className='flex items-center flex-col leading-3'>
-          <h1 className={`${styleScript.className} text-main text-4xl md:text-5xl`}>Root To Radiance</h1>
-          <p>By Beenish</p>
+          <h1 className={`${styleScript.className} text-dark text-4xl md:text-5xl`}>Root To Radiance</h1>
+          <p className='text-dark'>By Beenish</p>
         </div>
         <div className='flex gap-7 items-center'>     
-          <p className='text-sm underline hidden md:block'>Add Review</p>     
+          <p className='text-sm px-3 py-1.5 border hidden md:block'>Add Review</p>     
           <FiSearch />
-          <Link href={"/Cart"} className='relative'>
+          <Link href={"/"} className='relative'>
             <p className='bg-red-600 text-white w-[17px] text-[12px] text-center -top-2 -right-1.5 h-[17px] rounded-full absolute'>{totalItems}</p>
             <FiShoppingCart />
           </Link>

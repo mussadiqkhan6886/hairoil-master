@@ -21,7 +21,7 @@ const Reviews = async () => {
       <div className="text-center mb-10">
         <h2 className={`${instrumental.className} text-3xl md:text-6xl text-main`}>What Our Customers Say</h2>
         <p className="text-font text-sm md:text-base mt-3">
-          Real experiences from people who’ve fallen in love with Iqzaibessence.
+          Real experiences from people who’ve fallen in love with Root to Radiance By Beenish.
         </p>
       </div>
 
